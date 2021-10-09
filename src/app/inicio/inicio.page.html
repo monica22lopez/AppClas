@@ -1,0 +1,27 @@
+
+<app-header titulo="inicio"></app-header>
+
+<ion-content>
+
+<ion-list>
+
+  <ion-item *ngFor="let c of componentes" [routerLink]="c.redirectTo" detail="true">
+    <ion-icon slot="start" [name]='c.icon'></ion-icon>
+  
+  {{c.name}}
+  </ion-item>
+ 
+</ion-list>
+
+
+
+
+ <!--  <div id="container">
+
+    <p>Esta es pagina de Inicio</p>
+    <ion-button [routerLink]="['/cliente']">Ir a Cliente</ion-button>
+  </div> -->
+  
+</ion-content>
+
+
