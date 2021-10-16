@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+ <ion-back-button></ion-back-button>
+  </ion-buttons>
+
+    <ion-title class="ion-text-capitalize">avatar</ion-title>
+
+    <ion-buttons slot="end">
+    <ion-avatar>
+
+      <img src="assets/icon/descarga.jpg"/>
+
+    </ion-avatar>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-chip color="primary" mode="md" outline="true"
+      *ngFor="let item of [1,1,1,1]">
+<ion-avatar>
+  <img src="assets/icon/descarga.jpg"/>
+</ion-avatar>
+  <ion-label>default </ion-label>
+</ion-chip>
+
+<ion-list>
+  <ion-item  *ngFor="let a of Avatar">
+
+<!-- <ion-item  *ngFor="let item of [1,1,1,1]"> -->
+<ion-avatar slot="end">
+ 
+ <img [src]="a.img"/> 
+</ion-avatar>
+  <ion-label>Awesome Label </ion-label>
+</ion-item>
+
+
+
+
+
+</ion-list>
+</ion-content>

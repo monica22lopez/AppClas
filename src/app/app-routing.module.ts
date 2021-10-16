@@ -30,6 +30,22 @@ const routes: Routes = [
   {
     path: 'alert',
     loadChildren: () => import('./alert/alert.module').then( m => m.AlertPageModule)
+  },
+  {
+    path: 'avatar',
+    loadChildren: () => import('./avatar/avatar.module').then( m => m.AvatarPageModule)
+  },
+  {
+    path: 'favoritos',
+    loadChildren: () => import('./favoritos/favoritos.module').then( m => m.FavoritosPageModule)
+  },
+  {
+    path: 'card',
+    loadChildren: () => import('./card/card.module').then( m => m.CardPageModule)
+  },
+  {
+    path: 'fab',
+    loadChildren: () => import('./fab/fab.module').then( m => m.FabPageModule)
   }
 ];
 

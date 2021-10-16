@@ -10,8 +10,6 @@ redirectTo: string;
 
 
 
-
-
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.page.html',
@@ -26,21 +24,45 @@ export class InicioPage implements OnInit {
 
     },
     {
-      icon:'bag-remove-outline',
+      icon:'rose-outline',
       name:'Inbox',
       redirectTo: '/folder/Inbox',
 
     },
     {
-      icon:'flower-outline',
+      icon:'happy-outline',
       name:'cliente',
       redirectTo: '/cliente',
 
     },
     {
-      icon:'flower-outline',
+      icon:'dice-outline',
       name:'actions',
       redirectTo: '/actions',
+
+    },
+    {
+      icon:'accessibility-outline',
+      name:'avatar',
+      redirectTo: '/avatar',
+
+    },
+    {
+      icon:'accessibility-outline',
+      name:'favoritos',
+      redirectTo: '/favoritos',
+
+    },
+    {
+      icon:'card',
+      name:'card',
+      redirectTo: '/card',
+
+    },
+    {
+      icon:'card',
+      name:'fab',
+      redirectTo: '/fab',
 
     }
     
